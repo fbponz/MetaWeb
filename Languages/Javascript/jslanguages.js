@@ -31,3 +31,6 @@ while(i<=3)
     i=i+1;
 }
 console.log('Go')
+
+var result = "Hello".indexOf('l');
+console.log(result)
