@@ -1,5 +1,15 @@
 {
   "dependencies": {
     "jest": "^29.7.0"
-  }
+  },
+  "name": "writing-test-with-jest",
+  "version": "1.0.0",
+  "description": "testing jest",
+  "main": "addFive.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
 }
