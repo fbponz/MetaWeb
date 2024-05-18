@@ -1,0 +1,115 @@
+#logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    height: auto;
+    padding: 0.875rem 1rem;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+nav {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 0.625rem 0; /* Espacio alrededor del contenido */
+    text-align: center; /* Centrar el contenido */
+}
+
+nav ul {
+    list-style: none; /* Quitar viñetas */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar relleno predeterminado */
+}
+
+nav li {
+    display: inline-block; /* Convertir elementos de la lista en bloques en línea */
+    margin-right: 1.25rem; /* Espacio entre elementos */
+}
+
+nav li a {
+    color: inherit; /* Color de enlace igual al color del texto */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+nav li.active a {
+    background-color: #007bff; /* Color de fondo para la página activa */
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    flex: 1 0 30%; /* Cada tarjeta ocupa 1/3 del ancho disponible */
+    margin: 0.625rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 12.5rem; /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+}
+
+.contenido-tarjeta {
+    padding: 15px;
+}
+
+.contenedor-imagen {
+    position: relative; /* Permite posicionar el texto superpuesto */
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* La imagen se ajusta al contenedor sin distorsionarse */
+}
+
+.texto-superpuesto {
+    position: absolute; /* Posiciona el texto dentro del contenedor */
+    top: 50%; /* Posiciona verticalmente en el centro */
+    left: 50%; /* Posiciona horizontalmente en el centro */
+    transform: translate(-50%, -50%); /* Compensa la mitad del tamaño del texto */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+section div p {
+    text-align: center; 
+}
+
+h1 {
+    font-size: 4rem; /* Ajusta el tamaño de la fuente del título */
+    margin-bottom: 1rem; /* Espacio entre el título y el párrafo */
+}
+
+h3 {
+    font-weight: bold;
+    margin-bottom: 0.625rem;
+}
+
+p {
+    line-height: 1.6rem;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 64rem) {
+    .contenedor-tarjetas {
+        flex-direction: column; /* Las tarjetas se apilan verticalmente */
+    }
+
+    .tarjeta {
+        flex: 1 0 100%; /* Cada tarjeta ocupa el ancho completo */
+    }
+}
