@@ -1,10 +1,10 @@
 import './App.css';
 
-function Header(){
-  return <h1>Hello World</h1>;
+function Header(props){
+  return <h1>Hello World, {props.title}</h1>;
 }
-function App() {
-  return <Header />;
+function App(props) {
+  return <Header title={props.title} />;
 }
 
 export default App;
